@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Dana;
+  src: url("../fonts/dana/regular.ttf");
+}
+
+@font-face {
+  font-family: Dana;
+  src: url("../fonts/dana/bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Dana;
+  src: url("../fonts/dana/light.ttf");
+  font-weight: 200;
+}
+
+body,
+button {
+  font-family: Dana;
+}

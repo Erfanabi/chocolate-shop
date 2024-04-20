@@ -1,0 +1,153 @@
+.breadcrumb ul {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.breadcrumb li {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 200;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-right: 10px;
+  color: #aaa;
+}
+
+.breadcrumb li:last-of-type::after {
+  content: "";
+}
+
+.main-row {
+  align-items: flex-start;
+}
+
+.column.info {
+  flex: 5;
+}
+.column.gallery {
+  flex: 6;
+}
+
+.bi.bi-heart {
+  padding: 15px 15px 7px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.rate {
+  margin-right: -4px;
+}
+
+.rate i {
+  color: #ffba08;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.rate span {
+  text-decoration: underline;
+}
+
+.quantity .step-input {
+  border: 1px solid #ccc;
+  /* padding: 5px 12px; */
+  border-radius: var(--border-radius);
+}
+
+.quantity .step-input input {
+  height: 100%;
+  padding: 10px 15px;
+  width: 80px;
+  text-align: center;
+  font-family: Dana;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-left: 1px solid #ccc !important;
+  border-right: 1px solid #ccc !important;
+}
+
+.quantity .step-input button {
+  padding: 0px 15px;
+}
+
+.quantity .step-input button,
+.quantity .step-input input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.card.cover img {
+  width: 100%;
+  height: 290px;
+  object-fit: contain;
+  margin: 40px 0px;
+}
+
+.similar-products {
+  margin-top: 70px;
+}
+
+.similar-products .actions {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.similar-products .actions i {
+  padding: 10px 10px 5px 10px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: var(--secondary-color);
+}
+
+.main-row .actions-btn {
+  display: grid;
+  gap: 15px;
+}
+
+.main-row .actions-btn .btn.btn-outlined-primary {
+  width: 100% !important;
+}
+
+.similar-products-cards {
+  font-size: 12px;
+}
+
+.similar-products-cards .card img {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+}
+
+.thumbnails {
+  margin-top: 40px;
+}
+
+.thumbnails .image-container {
+  border: 1px solid var(--secondary-color);
+  padding: 7px 7px 0px 7px;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .thumbnails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .bi.bi-heart {
+    display: none !important;
+  }
+}

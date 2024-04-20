@@ -1,0 +1,85 @@
+@keyframes move {
+  0% {
+    transform: translate(30px, 10px);
+  }
+
+  25% {
+    transform: translate(10px, 20px);
+  }
+
+  50% {
+    transform: translate(-30px, -30px);
+  }
+
+  75% {
+    transform: translate(30px, -20px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.animation-move {
+  animation-name: move;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.products .card .image-container img {
+  transition: transform 160ms;
+}
+
+.products .card:hover .image-container img {
+  transform: scale(1.08) rotate(-5deg);
+}
+
+.products .card h4 {
+  transition: letter-spacing 120ms;
+}
+
+.products .card:hover h4 {
+  letter-spacing: 2px;
+}
+
+.products .card {
+  transition: box-shadow 160ms, border-radius 160ms;
+}
+
+.products .card:hover {
+  border-radius: 4px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.16);
+}
+
+.products .card .btn {
+  background: linear-gradient(
+    100deg,
+    var(--primary-color) 8%,
+    #4f892969 18%,
+    var(--primary-color) 32%
+  ) !important;
+  background-position: -100% 0% !important;
+  background-size: 200% 100% !important;
+}
+
+.products .card:hover .btn {
+  transition: background-position 400ms;
+  background-position: 100% 0% !important;
+}
+
+.articles .card-article .content {
+  transition: background-color 220ms;
+}
+
+.articles .card-article:hover .content {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.articles .card-article .image-container {
+  transition: filter 220ms;
+}
+
+.articles .card-article:hover .image-container {
+  filter: grayscale(90%);
+}

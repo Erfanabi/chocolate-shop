@@ -1,0 +1,395 @@
+/* header styles */
+.header .card {
+  position: relative;
+}
+
+.header .card .content {
+  position: relative;
+  z-index: 8;
+}
+
+.header .card .image {
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .card .image img {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.header .card .image::after {
+  content: "";
+  width: 70%;
+  padding-top: 70%;
+  left: 15%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ffe2a7;
+  z-index: 2;
+}
+
+.header .card .image::before {
+  content: "";
+  width: 50%;
+  padding-top: 50%;
+  /* left: 15%; */
+  top: -25%;
+  right: -20%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fcf5e7;
+  z-index: 1;
+}
+
+.header .card img.leaf-effect {
+  position: absolute;
+  bottom: -20px;
+  left: 40%;
+}
+/* end header styles */
+
+/* features styles */
+.features {
+  margin-top: 150px;
+  margin-bottom: 250px;
+  position: relative;
+}
+
+.features .row {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.features .shadow-effect {
+  width: 230px;
+  height: 230px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: -200px;
+  right: -50px;
+  filter: blur(45px) opacity(0.25);
+}
+
+.features .shadow-effect-light {
+  width: 270px;
+  height: 270px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  bottom: -200px;
+  left: -50px;
+  filter: blur(45px) opacity(0.7);
+}
+
+.features .card .card-body {
+  padding: 10px !important;
+}
+
+/* .features .card.card-1 .content {
+  padding-right: 10px;
+} */
+
+.features .card.card-1 .feature-image {
+  width: 120px;
+  margin-right: -60px;
+  margin-top: -70px;
+  margin-bottom: -30px;
+}
+
+/* .features .card.card-2 .content {
+  padding-left: 10px;
+} */
+
+.features .card.card-2 .feature-image {
+  width: 140px;
+  margin-left: -60px;
+  margin-top: -70px;
+  margin-bottom: -60px;
+}
+/* end features styles */
+
+/* poster styles */
+/* .poster img {
+    width: 100%;
+} */
+
+.poster {
+  background-color: var(--primary-color);
+  padding: 35px;
+  position: relative;
+  margin-bottom: 250px;
+}
+
+.poster .content {
+  border: 6px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0px;
+}
+.poster .content * {
+  margin: auto;
+  max-width: 80%;
+}
+.poster .content p {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 200;
+}
+.poster .element1 {
+  max-width: 20%;
+  position: absolute;
+  top: -80px;
+  left: 0px;
+  opacity: 0.5;
+}
+.poster .element2 {
+  max-width: 20%;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+}
+.poster .element3 {
+  max-width: 20%;
+  position: absolute;
+  bottom: -120px;
+  left: 20px;
+}
+/* end poster styles */
+
+/* products styles */
+.products {
+  margin-top: 350px;
+  position: relative;
+}
+
+.products .row .column {
+  width: 33.33%;
+}
+
+.products .card .image-container {
+  background-color: var(--secondary-color);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.products .card .image-container img {
+  height: 140px;
+  width: 100%;
+  object-fit: contain;
+}
+.products .card .image-container .label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color-darken)
+  );
+  padding: 5px 12px;
+  border-top-left-radius: 15px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.products .card i {
+  color: #fff500;
+}
+
+.products .leaf-effect {
+  position: absolute;
+  top: -150px;
+  right: -40px;
+}
+/* end products styles */
+
+/* about us styles */
+.about {
+  margin-top: 150px;
+  margin-bottom: 250px;
+  position: relative;
+}
+
+.about h3 {
+  font-size: 28px;
+}
+
+.about p {
+  font-weight: 200;
+}
+
+.about .shadow-effect {
+  width: 270px;
+  height: 270px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  left: 0px;
+  filter: blur(45px) opacity(0.7);
+}
+/* end about us styles */
+
+/* articles styles */
+.articles .column {
+  width: 33.33%;
+}
+
+.articles .card-article .image-container {
+  width: 80%;
+  margin-right: auto;
+  position: relative;
+}
+
+.articles .card-article .image-container img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.articles .card-article .image-container .label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color-darken),
+    var(--primary-color)
+  );
+  padding: 5px 12px;
+  border-top-left-radius: 15px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.articles .card-article .content {
+  margin-top: -172px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  height: 120px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+  position: relative;
+  z-index: 5;
+}
+
+.articles .card-article .content a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.articles .card-article .content p {
+  height: 50px;
+  overflow: hidden;
+}
+/* end articles styles */
+
+@media only screen and (max-width: 814px) {
+  /* features responsive for mobile */
+  .features .row {
+    flex-wrap: wrap;
+  }
+
+  .features .card-body {
+    padding: 5px;
+  }
+
+  .features .card-2 {
+    margin-top: 40px;
+  }
+  /* end features responsive for mobile */
+}
+
+@media only screen and (max-width: 560px) {
+  /* header responsive for mobile */
+  .header .card .d-flex {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .header .card .image {
+    max-width: 80%;
+  }
+
+  .header .card h1 {
+    margin-top: 60px;
+  }
+  /* end header responsive for mobile */
+
+  /* poster responsive for mobile */
+  .poster .content * {
+    max-width: 80%;
+  }
+
+  .poster .content img {
+    max-width: 40%;
+  }
+
+  .poster .element1 {
+    top: -20px;
+    max-width: 20% !important;
+  }
+
+  .poster .element3 {
+    bottom: -50px;
+  }
+  /* end poster responsive for mobile */
+
+  /* products responsive for mobile */
+  .products .leaf-effect {
+    width: 150px;
+    right: -40;
+  }
+
+  .products .row {
+    flex-wrap: wrap;
+  }
+
+  .products .row .column {
+    width: 100%;
+  }
+
+  .products .card {
+    margin-bottom: 30px;
+  }
+  /* end products responsive for mobile */
+
+  /* about responsive for mobile */
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about img {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+  /* end about responsive for mobile */
+
+  /* articles responsive for mobile */
+  .articles .row {
+    flex-wrap: wrap;
+  }
+  .articles .row .column {
+    width: 100%;
+    max-width: 100%;
+  }
+  .articles .card-article {
+    margin-bottom: 30px;
+  }
+  /* end articles responsive for mobile */
+}
